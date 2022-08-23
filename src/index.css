@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: .5em 2em;;
+  background: linear-gradient(to right, #e65c00, #f9d423);
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.title {
+  font-size: 1.75rem;
+}
+
+.trollface-img {
+  width: 40px;
+  margin-right: 5px;
+  color: #FFFFFF;
+  transform: translateY(0%);
+  animation: trollface-animation .2s infinite;
+
+}
+
+.project-description {
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+@keyframes trollface-animation {
+  0% {
+    transform: translateY(10%)
+  }
+  50% {
+    transform: translateY(13%)
+  }
+  100% {
+    transform: translateY(10%)
+  }
+}
+
+main {
+  padding: 36px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 50px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.input-text {
+  text-indent: 10px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  color: #0D0D0D;
+  font-family: 'Karla', sans-serif; 
+}
+
+.button {
+  position: relative;
+  font-family: 'Karla', sans-serif; 
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  border: .5px solid rgba(0 0 0 / .2);
+  background: linear-gradient(to right, #e65c00, #f9d423);
+  cursor: pointer;
+
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  box-shadow: 0 0 5px red;
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
